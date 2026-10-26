@@ -7,7 +7,7 @@ class ApiClient {
     }
 
     this.client = axios.create({
-      baseURL: '/api',
+      baseURL: 'https://api.favorit-parts.ru/hs/hsprice/',
       timeout: 15000,
       headers: {
         Accept: 'application/json',
@@ -33,11 +33,11 @@ class ApiClient {
         } else if (error.response) {
           message = `Ошибка сервера: ${error.response.status}`;
         } else if (error.request) {
-          message = 'Нет ответа от сервера (возможно, ошибка CORS).';
+          message = 'Нет ответа от сервера (возможно, ошибка CORS или Mixed Content).';
         }
 
         return Promise.reject(new Error(message));
-      },
+      }
     );
 
     ApiClient.instance = this;
