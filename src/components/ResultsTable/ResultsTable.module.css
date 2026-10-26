@@ -1,0 +1,124 @@
+.resultsTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #adb5bd;
+}
+
+.resultsTable thead th {
+  border-bottom: 1px solid #adb5bd;
+  border-right: 1px solid #adb5bd;
+  padding: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background-color: #e9ecef;
+  color: #343a40;
+  vertical-align: top;
+}
+
+.resultsTable thead th:last-child {
+  border-right: none;
+}
+
+.tableRow {
+  transition: background-color 0.2s ease;
+}
+
+.tableRow td {
+  border-bottom: 1px solid #adb5bd;
+  border-right: 1px solid #adb5bd;
+  padding: 20px 16px;
+  vertical-align: top;
+}
+
+.tableRow td:last-child {
+  border-right: none;
+}
+
+.tableRow:last-child td {
+  border-bottom: none;
+}
+
+.tableRow:hover {
+  background-color: #f1f3f5;
+}
+
+.warehousesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.warehouseItem {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px dashed #adb5bd;
+}
+
+.warehouseItem:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.warehouseBadge {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.2s ease;
+}
+
+.warehouseBadge:hover {
+  border-color: #6c757d;
+}
+
+.warehouseName {
+  color: #495057;
+  font-weight: 600;
+  text-align: left;
+  min-width: 80px;
+  border-right: 1px solid #dee2e6;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.warehousePrice {
+  color: #198754;
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-align: center;
+  flex-grow: 1;
+  border-right: 1px solid #dee2e6;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.warehouseStock {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-align: right;
+  min-width: 70px;
+}
+
+.warehouseCell {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

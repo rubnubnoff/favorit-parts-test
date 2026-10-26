@@ -1,0 +1,49 @@
+.customSearchGroup {
+  border: 2px solid #adb5bd;
+  border-radius: 50rem;
+  overflow: hidden;
+  transition: border-color 0.15s ease-in-out;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.customSearchGroup:focus-within {
+  border-color: #0d6efd;
+}
+
+.customSearchGroup :global(.input-group-text),
+.customSearchGroup :global(.form-control),
+.customSearchGroup .btnClear {
+  border: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.customSearchGroup :global(.input-group-text) {
+  padding-left: 1.25rem;
+  padding-right: 0.5rem;
+}
+
+.customSearchGroup .btnClear {
+  padding-right: 1.25rem;
+  padding-left: 0.5rem;
+  color: #adb5bd;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.customSearchGroup .btnClear:hover {
+  color: #dc3545;
+}
+
+.brandBtn {
+  transition: all 0.2s ease;
+}
+
+.brandBtn.activeBrand {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
